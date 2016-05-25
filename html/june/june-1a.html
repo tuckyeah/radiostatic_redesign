@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>==JUNE==</title>
+
+        <link rel="stylesheet" href="../../css/june.css">
+        <link rel="stylesheet" href="../../css/stars.css">
+        <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css' />
+
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+        <script src="../../js/alt_script.js"></script>
+
+        <script>
+            
+            // i feel like there's a way to combine these two functions...
+            // or at least have them on my alt_script / page specific function
+            
+            var n = 0;
+            var clicks = 0;
+            
+            function coverPanels() {
+                switch (n) {
+                    case 0:
+                        $('.coverUp').show();
+                        break;
+                    case 1:
+                        $('.one').fadeOut('slow');
+                        break;
+                    case 2:
+                        $('.two').fadeOut('slow');
+                        break;
+                }
+                n++;
+            }
+            
+            function onPageClick() {
+                $('.active').fadeIn(800);
+                var currentSection = $('.active')
+                var nextSection = currentSection.next('.section')
+                coverPanels();
+                console.log(clicks);
+
+                var visCover = ($('.coverUp:visible')).length;
+                
+                if (clicks = 0) {
+                    $(currentSection).fadeIn('slow');
+                }
+                
+                if (nextSection.length != 0) {
+                    if (visCover == 0) {
+                        $(currentSection).fadeOut('slow', function() {
+                            n = 0
+                            coverPanels();
+                            currentSection.removeClass('active');
+                            nextSection.fadeIn(1200).addClass('active')
+                        });
+                    }
+                } else if (nextSection.length == 0) {
+                    if (visCover - 1 == 0) {
+                        $('main').wrapInner('<a href="june-2.html" />')
+                    }
+                }
+                clicks++;
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <!--TODO: The background image size / constellation placement needs to be adjusted based on viewport-->
+        <main>
+
+            <div class="mainContainer">
+                <div class="constellationSideBar" style="width: 15%;">
+                    <div class="constellations">
+
+                        <!--           June Constellation -->
+                        <div class="juneConstellation">
+                            <div class="star activated" id="june-1"></div>
+                            <div class="star" id="june-2"></div>
+                            <div class="star" id="june-3"></div>
+                            <div class="star" id="june-4"></div>
+                            <div class="star" id="june-5"></div>
+                            <div class="star" id="june-6"></div>
+                            <div class="star" id="june-7"></div>
+                            <div class="star" id="june-8"></div>
+                            <div class="star" id="june-9"></div>
+                            <div class="star" id="june-10"></div>
+                            <div class="star" id="june-11"></div>
+                            <div class="nameBox" id="june">
+                                <p>June <br />
+                                    Variable</p>
+                            </div>   
+                        </div>
+                        <!--          Charlie Constellation -->
+                        <div class="charlieConstellation lowOpacity">         <div class="star" id="num2crush"></div>
+                            <div class="star" id="tollbooth"></div>
+                            <div class="star" id="meetJune"></div>
+                            <div class="star" id="thePlan"></div>
+                            <div class="star" id="nowWhat"></div>
+                            <div class="star" id="inside"></div>
+                            <div class="star" id="charlieDrive"></div>
+                            <div class="star" id="transcripts"></div>
+                            <div class="star" id="theBar"></div>
+                            <div class="star" id="dayDreamer"></div>
+                            <div class="star" id="radio"></div>
+                        </div>
+
+                        <!--         Leopold Constellation -->
+                        <div class="leopoldConstellation lowOpacity">
+                            <div class="star" id="ive-arrived"></div>
+                            <div class="star" id="confessions"></div>
+                            <div class="star" id="letter2"></div>
+                            <div class="star" id="tripreport"></div>
+                            <div class="star" id="datura"></div>
+                            <div class="star" id="thewicked"></div>
+                            <div class="star" id="nightshade"></div>
+                            <div class="star" id="drive"></div>
+                            <div class="star" id="meetCharlie"></div>
+                            <div class="star" id="mescaline"></div>
+                            <div class="star" id="howl"></div>
+                            <div class="star" id="hydrogen"></div> 
+                        </div>
+
+                        <div class="bartenderConstellation lowOpacity">
+                            <div class="star" id="bartender-first"></div>
+                            <div class="star" id="bartender-second"></div>
+                            <div class="star" id="bartender-third"></div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="fixedContainer"> 
+                    <div class="coverUp one"></div>
+                    <div class="coverUp two"></div>
+                    
+
+                    <div class="section active">
+                        <div class="comicContainer">
+
+                            <table class="main" id="airstream">
+                                <td>
+                                    <p>We'd been driving through the desert for what felt like an eternity. The car was sticky hot. </p>
+                                </td>
+
+                                <td>
+                                    <p>Charlie and I were both admittedly irritable from spending too long together in such close quarters, so when we saw that Airstream glowing on the horizon, </p>
+                                </td>
+
+                                <td>
+                                    <p>I genuinely half expected it to fade into thin air as we approached, like a desert oasis from one of those old Looney Toons. </p>
+                                </td>
+
+                            </table>
+                           </div>
+                        </div>
+
+
+                    <div class="section">
+                        <div class="comicContainer">
+                            <table class="main" id="pink">
+                                <td>
+                                    <p>Before I could even climb out of the car, my partner called my name.</p>
+                                    <br />
+                                    <p>"This is it, June!" he declared with delight. "Or at least, we're close... closer than we've ever been."</p>
+
+                                </td>
+                                <td>
+                                    <p> Charlie's smile was so broad it glowed brighter than the trailer. I saw a light in his eyes that I thought long since extinguished, and I had not seen him this giddy in ages.</p>
+                                </td>
+                                <td>
+                                    <p>Who was it that said 'hope springs eternal'?</p>
+                                </td>
+                            </table>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </main>
+
+
+
+    </body>

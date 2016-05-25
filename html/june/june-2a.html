@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--THis is the version with the black sidebar done in CSS-->
+    <head>
+        <meta charset="UTF-8">
+        <title>==JUNE==</title>
+
+        <link rel="stylesheet" href="../../css/june-test.css">
+        <link rel="stylesheet" href="../../css/stars.css">
+        <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css' />
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+        <script src="../../js/alt_script.js"></script>
+
+
+        <script>
+            
+            function pageSpecificFunction() {
+                
+                if (currentSection == 1 && currentStage == 4) {
+                    $('.bold').css('font-style', 'italic');
+                    $('.hide').animate({color: "rgba(192,191,191, 0.5)"}, 800, function()   {   
+                        $("#leopold").css("visibility", "visible");
+                        $('.leopoldConstellation').removeClass('lowOpacity');
+                    }
+                )}                
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <!--TODO: The background image size / constellation placement needs to be adjusted based on viewport-->
+        <main>
+
+            <div class="mainContainer">
+                <div class="constellationSideBar" style="width: 15%;">
+                    <div class="constellations">
+
+                        <!--           June Constellation -->
+                        <div class="juneConstellation">
+                            <div class="star activated" id="june-1"></div>
+                            <div class="star activated" id="june-2"></div>
+                            <div class="star activated" id="june-3"></div>
+                            <div class="star" id="june-4"></div>
+                            <div class="star" id="june-5"></div>
+                            <div class="star" id="june-6"></div>
+                            <div class="star" id="june-7"></div>
+                            <div class="star" id="june-8"></div>
+                            <div class="star" id="june-9"></div>
+                            <div class="star" id="june-10"></div>
+                            <div class="star" id="june-11"></div>
+                            <div class="nameBox" id="june">
+                                <p>June <br />
+                                    Variable</p>
+                            </div>   
+                        </div>
+                        <!--          Charlie Constellation -->
+                        <div class="charlieConstellation lowOpacity">         <div class="star" id="num2crush"></div>
+                            <div class="star" id="tollbooth"></div>
+                            <div class="star" id="meetJune"></div>
+                            <div class="star" id="thePlan"></div>
+                            <div class="star" id="nowWhat"></div>
+                            <div class="star" id="inside"></div>
+                            <div class="star" id="charlieDrive"></div>
+                            <div class="star" id="transcripts"></div>
+                            <div class="star" id="theBar"></div>
+                            <div class="star" id="dayDreamer"></div>
+                            <div class="star" id="radio"></div>
+                        </div>
+
+                        <!--         Leopold Constellation -->
+                        <div class="leopoldConstellation lowOpacity">
+                            <div class="star" id="ive-arrived"></div>
+                            <div class="star" id="confessions"></div>
+                            <div class="star" id="letter2"></div>
+                            <div class="star" id="tripreport"></div>
+                            <div class="star" id="datura"></div>
+                            <div class="star" id="thewicked"></div>
+                            <div class="star" id="nightshade"></div>
+                            <div class="star" id="drive"></div>
+                            <div class="star" id="meetCharlie"></div>
+                            <div class="star" id="mescaline"></div>
+                            <div class="star" id="howl"></div>
+                            <div class="star" id="hydrogen">
+                            </div> 
+                            <div class="nameBox" id="leopold" style="visibility: hidden">
+                                <p>Your</p>
+                                <p> Intrepid</p>
+                                <p> Leopold</p>
+                            </div> 
+                        </div>
+
+                        <div class="bartenderConstellation lowOpacity">
+                            <div class="star" id="bartender-first"></div>
+                            <div class="star" id="bartender-second"></div>
+                            <div class="star" id="bartender-third"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="comicContainer">
+                    <div class="content">
+                        
+                        <div class="section-0">
+                            <div class="fadeIn">
+                                <div class="panel barSignOne">
+                                    <div class="outer">
+                                        <div class="middle">
+                                            <p> We entered the bar and, as my sight adjusted to the haze, I saw neon signs advertising cheap beer brands I've never heard of, dotting the faux wood-grain walls. The signage lent a carnival sensibility to the place. I felt drunk just walking in. </p>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fadeIn">
+                                <div class="panel barSignTwo">
+                                    <div class="outer">
+                                        <div class="middle">
+                                            <p>"We're here on a missing persons report," Charlie told the Bartender.</p>
+                                            <p>I looked him, trying to conceal my surprise. This was the first I'd heard of any 'missing person.' Was this what we were looking for? I couldn't tell if he was bluffing. His elbow nudging into my side told me he was.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fadeIn">
+                                <div class="panel barSignThree">
+                                    <div class="outer">
+                                        <div class="middle">
+                                            <p>Without looking up from the glass he was washing, the Bartender answered. "That's gonna be tough. Almost everyone here is missing in some way or another. And most don't want to be found."</p>
+                                            <p>"So does that mean you won't be helping us?" I assumed.</p>
+                                            <p>"Guess it depends on who's doing the looking." </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                        <div class="section-1">
+                            <div class="fadeIn">
+                                <div class="panel barStoolOne">
+                                    <div class="outer">
+                                        <div class="middle">
+                                            <p>
+                                                <span class="hide">"Hey, you guys are looking for someone? Me too!"
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="hide">A voice came from the only occupied stool in the place, in the shadows at the end of the bar. I hadn't seen
+                                                </span>
+                                                <span class="bold">the old man</span>
+                                                <span class="hide">when we first came in, and his voice now startled me.
+                                                </span>
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fadeIn">
+                                <div class="panel barStoolTwo">
+                                    <div class="outer">
+                                        <div class="middle">
+                                        <p>
+                                            <span class="hide">
+                                                "Didn't mean to scare you there. I'm searching for someone too, just like you fine folks," he said,
+                                            </span>
+                                        </p>
+                                        <p> 
+                                            <span class="bold">his tongue, like a pink eel hiding in the rocks, slipped through the gaps made by his missing teeth.</span>
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fadeIn">
+                                <div class="panel barStoolThree">
+                                    <div class="outer">
+                                        <div class="middle">
+                                            
+                                            <p>
+                                                <span class="hide">
+                                                    "I'm </span><span class="bold"> Leopold</span>
+                                                    <span class="hide">," he said, moving towards us with an extended hand. "Perhaps you can help me find my son."
+                                                </span>
+                                            </p>
+                                            <p>
+                                               <a href="../night_sky_leopold.html"></a>
+                                                <span class="hide">"We sure can," Charlie said, giving me that confident smirk he got when he was right.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="fadeIn"></div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </main>
+
+
+
+    </body>
