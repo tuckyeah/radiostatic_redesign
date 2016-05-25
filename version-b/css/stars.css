@@ -1,0 +1,761 @@
+/*STAR ANIMATION*/
+/* from https://codepen.io/WebSonick/pen/vjmgu/ by Nick Mkrtchyan */
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+.stars, .twinkling  {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.stars {
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: -50;
+}
+
+.twinkling{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index: -45;
+
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+}
+
+/*--------------------CONSTELLATIONS----------------------*/
+
+.blackSideBarImage {
+    background-image:url("../imgs/side_black.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+/*    background-color: #FEFEFE;*/
+    background-position: -400px 0px;
+}
+
+.backColor {
+    background-color: #000;
+}
+
+.constellationsHeader {
+    position: relative;
+    width: 102%;
+    top: 0;
+    margin: -10px;
+    z-index: -500;
+}
+
+.constellationSideBar {
+    float: left;
+    height: 98vh;
+    position: absolute;
+    z-index: -99;
+    width: 20%;
+/*    margin-top: -7%;*/
+    padding: 0px;
+    top: 0;
+}
+
+.constellations {
+    height: 60vh;
+    width: 100%;
+}
+
+.constellationSideBar .constellations {
+    position: relative;
+    height: inherit;
+    width: 100%;
+}
+
+.constellationsHeader .constellations {
+    position: relative;
+    width: 100%;
+    opacity: 0.5;
+    height: 250px;
+}
+
+/* Pretty sure i can just delete this entirely
+.star {
+    background-color: #FFF;
+    box-shadow: 0 0 3px #B8E6B8, 0 0 5px #B2FFFF, 0 0 10px #E6FFE6;
+    height: 5px;
+    width: 5px;
+    margin: 10px;
+    display: none;
+    position: absolute;
+    border-radius: 40px;
+}
+*/
+
+.constellations .star {
+    display: block;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    background-color: rgb(93, 93, 93);
+    margin: 0px;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.6), 0 0 8px 4px rgba(255, 255, 255, 0.4);
+    opacity: 0.7;
+    border-radius: 40px;
+}
+
+.constellations.nightSky .star {
+    background-color: rgb(38, 38, 38);
+    box-shadow: 0 0 0px #000;
+    opacity: 1;
+}
+
+.nightSky .star.activated {
+    background-color: #FFF;
+    opacity: 0.9;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.7), 0 0 6px 10px rgba(245, 253, 183, 0.6), 0 0 11px 15px rgba(255, 255, 117, 0.3);
+}
+
+.nightSky .lowOpacity .star.activated {
+    opacity: 0.7;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+}
+
+.lowOpacity .star {
+    background-color: rgb(111, 111, 111);
+    box-shadow: 0 0 0px #FFF;
+    opacity: 0.2;
+}
+
+.lowOpacity .star.activated {
+    opacity: 0.3;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0)
+}
+
+/*
+.onBlack .star {
+    background-color: #2e2e2e;
+    opacity: 0.6;
+}
+*/
+
+.star.activated {
+    background-color: #FFF;
+    opacity: 0.9;
+    box-shadow: 0 0 4px #FFF, 0 0 6px #f5fdb7, 0 0 11px #ffff89;
+}
+
+/*NAME BOXES*/
+
+.nameBox {
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+}
+.constellationSideBar .nameBox {
+    padding: 0px;
+}
+
+.nameBox#june {
+    color: rgba(234, 234, 234, 0.9);
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+
+.constellationSideBar .nameBox#june {
+    top: 80%;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.constellationSideBar .display.nameBox#june {
+    top: 90%;
+    margin-left: 20%;
+    font-size: 22px;
+}
+
+.nameBox#charlie {
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.constellationSideBar .nameBox#charlie {
+    top: 0;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.nameBox#leopold {
+    color: rgba(234, 234, 234, 0.9);
+    font-family: 'Special Elite', monospace;
+    font-size: 14px;
+    width: auto;
+}
+
+.constellationSideBar .nameBox#leopold {
+    top: 80%;
+    margin-left: 5%;
+    font-size: 14px;
+    width: auto;
+    font-weight: 500;
+}
+
+.display.nameBox#leopold {
+    top: 90%;
+    margin-left: 20%;
+    font-size: 18px;
+    width: auto;
+}
+
+
+.nameBox#bartender {
+    color: #fff;
+    font-family: 'Pacifico', monospace;
+    font-size: 15px;
+}
+
+.constellationSideBar .nameBox#bartender {
+    top: 0%;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+/* leopold's constellations */
+
+.leopoldConstellation {
+    height: 60%;
+    width: 35%;
+    float: left;
+    position: relative;
+    /*    border: 10px solid white;*/
+}
+
+.constellationSideBar .leopoldConstellation {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.constellations .star#ive-arrived {
+    top: 5%;
+    left: 50%;
+    height: 12px;
+    width: 12px;
+}
+
+.constellationSideBar .constellations .star#ive-arrived {
+    top: 5%;
+    left: 50%;
+}
+
+.constellations .star#confessions {
+    top: 14%;
+    left: 35%;
+    height: 10px;
+    width: 10px;
+}
+
+.constellationSideBar .constellations .star#confessions {
+    top: 11%;
+    left: 35%;
+}
+
+.constellations .star#letter2 {
+    top: 20%;
+    left: 50%;
+}
+
+.constellationSideBar .constellations .star#letter2 {
+    top: 17%;
+    left: 50%;
+}
+
+.constellations .star#tripreport {
+    top: 23%;
+    left: 65%;
+}
+
+.constellationSideBar .constellations .star#tripreport {
+    top: 19%;
+    left: 65%;
+}
+
+.constellations .star#datura {
+    top: 28%;
+    left: 68%;
+}
+
+.constellationSideBar .constellations .star#datura {
+    top: 26%;
+    left: 71%;
+}
+
+.constellations .star#thewicked {
+    top: 33%;
+    left: 70%;
+    height: 10px;
+    width: 10px;
+}
+
+.constellationSideBar .constellations .star#thewicked  {
+    top: 33%;
+    left: 77%;
+}
+
+.constellations .star#nightshade {
+    top: 38%;
+    left: 66%;
+    height: 8px;
+    width: 8px;
+}
+
+.constellationSideBar .constellations .star#nightshade {
+    top: 44%;
+    left: 62%;
+}  
+
+.constellations .star#drive {
+    top: 45%;
+    left: 55%;
+    height: 12px;
+    width: 12px;
+}
+
+.constellationSideBar .constellations .star#drive {
+    top: 48%;
+    left: 45%;
+}
+
+.constellations .star#meetCharlie {
+    top: 35%;
+    left: 35%;
+}
+
+.constellationSideBar .constellations .star#meetCharlie {
+    top: 30%;
+    left: 26%;
+}
+
+.constellations .star#mescaline {
+    top: 60%;
+    left: 48%;
+    height: 10px;
+    width: 10px;
+}
+
+.constellationSideBar .constellations .star#mescaline {
+    top: 62%;
+    left: 39%;
+}
+
+.constellations .star#howl {
+    top: 65%;
+    left: 45%;
+}
+
+.constellationSideBar .constellations .star#howl  {
+    top: 72%;
+    left: 49%;
+}
+
+.constellations .star#hydrogen {
+    top: 80%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+}
+
+.constellationSideBar .constellations .star#hydrogen {
+    top: 85%;
+    left: 50%;
+}
+
+
+/*CHARLIE & JUNE Constellations*/
+
+.charlieAndJune {
+    height: 60%;
+    width: 50%;
+    float: left;
+    position: relative;
+    /*    border: 10px solid white;*/
+}
+
+/*June Constellation*/
+.charlieAndJune .juneConstellation {
+    width: 49%;
+    height: 100%;
+    float: left;
+    /*    border: 2px dotted #656565;*/
+    position: absolute;
+}
+
+.juneConstellation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.constellationSideBar .juneConstellation {
+    width: 100%;
+    height: 30%;
+}
+
+.constellations .star#june-1 {
+    top: 5%;
+    left: 50%;
+}
+
+.constellations .star#june-2 {
+    top: 10%;
+    left: 50%;
+    height: 6px;
+    width: 6px;
+}
+
+.constellations .star#june-3 {
+    top: 15%;
+    left: 95%;
+    height: 12px;
+    width: 12px;
+}
+
+.constellationSideBar .constellations .star#june-3 {
+    top: 17%;
+    left: 75%;
+}
+
+.constellations .star#june-4 {
+    top: 25%;
+    left: 25%;
+    height: 10px;
+    width: 10px;
+}
+
+.constellationSideBar .constellations .star#june-4 {
+    top: 20%;
+    left: 35%;
+    height: 10px;
+    width: 10px;
+}
+
+.constellations .star#june-5 {
+    top: 32%;
+    left: 20%;
+}
+
+.constellationSideBar .constellations .star#june-5 {
+    top: 29%;
+    left: 28%:
+}
+
+.constellations .star#june-6 {
+    top: 40%;
+    left: 33%;
+    height: 11px;
+    width: 11px;
+}
+
+.constellations .star#june-7 {
+    top: 50%;
+    left: 43%;
+    height: 5px;
+    width: 5px;
+    border-radius: 50px;
+}
+
+.constellationSideBar .constellations .star#june-7 {
+    top: 41%;
+    left: 55%;
+}
+
+.constellations .star#june-8 {
+    top: 60%;
+    left: 55%;
+}
+
+.constellations .star#june-9 {
+    top: 70%;
+    left: 28%;
+    height: 9px;
+    width: 9px;
+}
+
+.constellationSideBar .constellations .star#june-9 {
+    top: 73%;
+    left: 40%;
+}
+
+.constellations .star#june-10 {
+    top: 75%;
+    left: 78%;
+    height: 9px;
+    width: 9px;
+    border-radius: 50px;
+}
+
+.constellationSideBar .constellations .star#june-10 {
+    top: 68%;
+    left: 68%;
+}
+
+.constellations .star#june-11 {
+    top: 85%;
+    left: 95%;
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+}
+
+.constellationSideBar .constellations .star#june-11 {
+    top: 76%;
+    left: 76%;
+}
+
+
+/*Charlie Constellation */
+.charlieConstellation {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.charlieAndJune .charlieConstellation {
+    width: 49%;
+    height: 100%;
+    float: right;
+/*        border: 2px dotted #f0f799;*/
+}
+
+.constellationSideBar .charlieConstellation {
+    width: 100%;
+    height: 30%;
+}
+
+
+.constellations .star#num2crush {
+    top: 7%;
+    left: 46%;
+    height: 10px;
+    width: 10px;
+}
+
+.constellationSideBar .constellations .star#num2crush {
+    top: 7%;
+    left: 53%;
+}
+
+.constellations .star#tollbooth {
+    top: 11%;
+    left: 27%;
+}
+
+.constellationSideBar .constellations .star#tollbooth {
+    top: 14%;
+    left: 33%;
+}
+
+.constellations .star#meetJune {
+    top: 15%;
+    left: 11%;
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+}
+
+.constellationSideBar .constellations .star#meetJune {
+    top: 31%;
+    left: 19%;
+}
+
+.constellations .star#thePlan {
+    top: 21%;
+    left: 44%;
+}
+
+.constellationSideBar .constellations .star#thePlan {
+    top: 25%;
+    left: 48%;
+}
+
+.constellations .star#nowWhat {
+    top: 25%;
+    left: 75%;
+}
+
+.constellationSideBar .constellations .star#nowWhat  {
+    top: 20%;
+    left: 74%;
+}
+
+.constellations .star#inside {
+    top: 32%;
+    left: 61%;
+    height: 6px;
+    width: 6px;
+}
+
+.constellationSideBar .constellations .star#inside {
+    top: 38%;
+    left: 73%;
+}
+
+.constellations .star#charlieDrive {
+    top: 42%;
+    left: 83%;
+}
+
+.constellationSideBar .constellations .star#charlieDrive {
+    top: 45%;
+    left: 85%;
+}
+
+.constellations .star#transcripts {
+    top: 54%;
+    left: 62%;
+    height: 11px;
+    width: 11px;
+    border-radius: 50px;
+}
+
+.constellationSideBar .constellations .star#transcripts {
+    top: 58%;
+    left: 62%;
+}
+
+.constellations .star#theBar {
+    top: 70%;
+    left: 37%;
+}
+
+.constellationSideBar .constellations .star#theBar {
+    top: 71%;
+    left: 50%;
+}
+
+.constellations .star#dayDreamer {
+    top: 73%;
+    left: 20%
+
+}
+
+.constellationSideBar .constellations .star#dayDreamer {
+    top: 68%;
+    left: 24%;
+}
+
+.constellations .star#radio {
+    top: 84%;
+    left: 5%;
+    height: 14px;
+    width: 14px;
+    border-radius: 50px;
+}
+
+.constellationSideBar .constellations .star#radio {
+    top: 87%;
+    left: 31%;
+}
+
+/*Bartender Constellation*/
+
+.bartenderConstellation {
+    height: 60%;
+    /*    border: 1px solid white;*/
+    width: 11%;
+    float: left;
+    position: relative;
+}
+
+.constellationSideBar .bartenderConstellation {
+    height: 10%;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.constellations .star#bartender-first {
+    top: 35%;
+    left: 60%;
+}
+
+.constellationSideBar .constellations .star#bartender-first {
+    top: 20%;
+    left: 44%;
+}
+
+.constellations .star#bartender-second {
+    top: 45%;
+    left: 60%;
+}
+
+.constellationSideBar .constellations .star#bartender-second {
+    top: 46%;
+    left: 60%;
+}
+
+.constellations .star#bartender-third {
+    top: 42%;
+    left: 22%;
+}
+
+.constellationSideBar .constellations .star#bartender-third {
+    top: 63%;
+    left: 32%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .leopoldConstellation, .charlieAndJune, .bartenderConstellation {
+        height: 40%;
+    }
+
+    .nameBox#june {
+        top: 80%;
+        margin-left: 10%;
+        font-size: 14px;
+    }
+    
+    .constellationSideBar {
+        visibility: hidden;
+    }
+    
+    .nameBox {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    
+    .leopoldConstellation, .charlieAndJune, .bartenderConstellation {
+        height: 80%;
+    }
+    
+    .constellations {
+        height: 50vh;
+    }
+}
