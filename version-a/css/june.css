@@ -1,0 +1,128 @@
+body {
+    background-color: #c0bfbf;
+/*    background-color: #FFFAD5;*/
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*-------COMIC PARENT TABLE --------*/
+
+.mainContainer {
+/*    position: relative;*/
+    width: 100%;
+    height: 100%;
+}
+
+.innerContainer {
+    position: relative;
+}
+
+.fixedContainer {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20%;
+    max-width: 1200px;
+    min-width: 600px;
+}
+
+.comicContainer {
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 100%;
+}
+
+table.main {
+    margin: auto;
+    border: 1px solid black;
+    border-spacing: 5px;
+    box-shadow: 5px 5px 0px 0px rgba(72, 72, 72, 0.8)
+}
+
+td {
+    width: 400px;
+    height: 500px;
+    border: 10px solid white;
+}
+
+td p {
+    width: 70%;
+    margin: auto;
+    background-color: rgba(245, 219, 159, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4e2304;
+    color: #4e2304;
+    margin: 10px auto;
+    box-shadow: 2px 3px 0px 0px rgba(33, 28, 28, 0.75);
+    font-family: 'Slabo 27px', serif;
+}
+
+.section {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.coverUp {
+    height: 545px;
+    width: 100%;
+    background-color: #c0bfbf;
+    position: absolute;
+    z-index: 99;
+    border: 1px solid black;
+    overflow-x: hidden;
+}
+
+.coverUp.one {
+    left: 402px;
+    margin-left: -1px;
+}
+
+.coverUp.two {
+    left: 800px;
+    margin-left: -2px;
+}
+
+/*--------------------BACKGROUNDS-------------------------*/
+
+#airstream {
+    background-image: url('../imgs/airstream-1.jpg');
+    background-size: cover;
+    background-position: 0px -85px;
+}
+
+#pink {
+    background-image: url('../imgs/pinklights.jpg');
+    background-size: cover;
+}
+
+#barsign {
+    background-image: url('../imgs/opensign.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: #160805;
+}
+
+#insideBar {
+    background-image: url('../imgs/bar_interior_crop.png');
+    background-size: cover;
+    background-position: top;
+}
+
+#nightDesert {
+    background-image: url('../imgs/nightdesert.jpg');
+    background-size: cover;
+}
+
+#nightSky {
+    background-image: url('../imgs/constellation.jpg');
+    background-size: cover;
+}

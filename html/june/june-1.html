@@ -14,13 +14,13 @@
         <script>
             function pageSpecificFunction() {
 
-//                if (currentSection == 2 && currentStage == 4) {  
-//                        $("#june").css("visibility", "visible");
-//                        $('.juneConstellation').removeClass('lowOpacity', function() {
-//                            $('.juneConstellation .star:first-child').addClass('activated')
-//                        });
-//                    }
-//                }                
+                if (currentSection == 2 && currentStage == 4) {  
+                        $("#june").css("visibility", "visible");
+                        $('.juneConstellation').removeClass('lowOpacity', function() {
+                            $('.juneConstellation .star:first-child').addClass('activated')
+                        });
+                    }
+                }                
         </script>
 
     </head>
@@ -30,8 +30,8 @@
                 <div class="constellations">
 
                     <!--           June Constellation -->
-                    <div class="juneConstellation">
-                        <div class="star activated" id="june-1"></div>
+                    <div class="juneConstellation lowOpacity">
+                        <div class="star" id="june-1"></div>
                         <div class="star" id="june-2"></div>
                         <div class="star" id="june-3"></div>
                         <div class="star" id="june-4"></div>
@@ -42,7 +42,7 @@
                         <div class="star" id="june-9"></div>
                         <div class="star" id="june-10"></div>
                         <div class="star" id="june-11"></div>
-                        <div class="nameBox" id="june">
+                        <div class="nameBox" id="june" style="visibility:hidden">
                             <p>June <br />
                                 Variable</p>
                         </div>   
@@ -182,7 +182,7 @@
                             <div class="panel satsThree">
                                 <div class="outer">
                                     <div class="middle">
-                                    <a href="../coldbeer.html"></a>
+                                    <a href="june-1b.html"></a>
                                     <p>Besides, it's not as if I have much else to do.</p>
                                     </div>
                                 </div>

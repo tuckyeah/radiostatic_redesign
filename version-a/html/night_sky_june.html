@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/clean.css">
+    <link rel="stylesheet" href="../css/stars.css">
+    <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css' />
+
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<!--
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/alt_script.js"></script>
+-->
+    <title>Let The Stars Be Your Guide</title>
+    
+    <script>
+        
+        function onPageClick() {
+            $('.juneConstellation .star').animate({
+                backgroundColor: "#FFF"}, '800');
+            $('#june').fadeIn('slow');
+            $('.juneConstellation .star:first-child').addClass('activated');
+            $('.juneConstellation').wrap('<a href="june/june-1b.html" />')
+            
+        }
+        
+        $(document).ready(function() {
+            $('#june').hide();
+            $(document).on('click', function() {
+               onPageClick();
+            });
+            $(document).keypress(function() {
+                onPageClick();
+            })
+        });
+    </script>
+    
+</head>
+<body class="blackBkgd">
+   <div class="stars"></div>
+   <div class="twinkling"></div>
+   
+   <div class="container" style="margin-top: 10%;">
+       <div class="constellations nightSky">
+           <div class="leopoldConstellation lowOpacity">
+               <div class="star" id="ive-arrived"></div>
+               <div class="star" id="confessions"></div>
+               <div class="star" id="letter2"></div>
+               <div class="star" id="tripreport"></div>
+               <div class="star" id="datura"></div>
+               <div class="star" id="thewicked"></div>
+               <div class="star" id="nightshade"></div>
+               <div class="star" id="drive"></div>
+               <div class="star" id="meetCharlie"></div>
+               <div class="star" id="mescaline"></div>
+               <div class="star" id="howl"></div>
+               <div class="star" id="hydrogen"></div> 
+           </div>
+
+           <div class="bartenderConstellation">
+               <div class="star" id="bartender-first"></div>
+               <div class="star" id="bartender-second"></div>
+               <div class="star" id="bartender-third"></div>
+
+
+           </div>
+           <div class="charlieAndJune">
+               <!--JUNE CONSTELLATION-->
+               <div class="juneConstellation">
+                   <div class="star" id="june-1"></div>
+                   <div class="star" id="june-2"></div>
+                   <div class="star" id="june-3"></div>
+                   <div class="star" id="june-4"></div>
+                   <div class="star" id="june-5"></div>
+                   <div class="star" id="june-6"></div>
+                   <div class="star" id="june-7"></div>
+                   <div class="star" id="june-8"></div>
+                   <div class="star" id="june-9"></div>
+                   <!--               this will be x marks the spot-->
+                   <div class="star" id="june-10"></div>
+                   <!--              And this will be convo-a -->
+                   <div class="star" id="june-11"></div>
+                   <div class="display nameBox" id="june">
+                       <p>June Variable</p>
+                   </div>
+
+               </div>
+
+               <!-- CHARLIE CONSTELLATION-->
+               <div class="charlieConstellation">
+                   <div class="star" id="num2crush"></div>
+                   <div class="star" id="tollbooth"></div>
+                   <div class="star" id="meetJune"></div>
+                   <div class="star" id="thePlan"></div>
+                   <div class="star" id="nowWhat"></div>
+                   <div class="star" id="inside"></div>
+                   <div class="star" id="charlieDrive"></div>
+                   <div class="star" id="transcripts"></div>
+                   <div class="star" id="theBar"></div>
+                   <div class="star" id="radio"></div>
+               </div>
+
+           </div> 
+
+       </div>
+   </div>
+    
+</body>
+</html>
