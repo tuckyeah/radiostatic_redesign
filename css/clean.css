@@ -69,6 +69,11 @@ a {
     line-height: 130%;
 }
 
+.content.textOnly {
+    margin-top: 25%;
+
+    
+}
 .content.fixedWidth {
     width: 540px;
 }

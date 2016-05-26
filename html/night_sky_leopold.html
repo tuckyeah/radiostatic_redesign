@@ -22,12 +22,7 @@
 
             $(document).ready(function() {
                 $('#leopold').hide();
-                $(document).on('click', function() {
-                    onPageClick();
-                });
-                $(document).keypress(function() {
-                    onPageClick();
-                })
+                setTimeout(onPageClick, 800)
             });
 
         </script>

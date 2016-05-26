@@ -1,5 +1,5 @@
 body {
-    background-color: #2a2a2a;
+    background-color: #2e2e2e;
     /*    background-color: #FFFAD5;*/
 }
 
@@ -84,4 +84,16 @@ a {
 
 .panel.sunsetThree {
     background-image: url('../imgs/june_strips/june-2-1c.jpg')
+}
+
+.panel.satFieldOne {
+    background-image: url('../imgs/june_strips/june-satfield-a.jpg');
+}
+
+.panel.satFieldTwo {
+    background-image: url('../imgs/june_strips/june-satfield-b.jpg');
+}
+
+.panel.satFieldThree {
+    background-image: url('../imgs/june_strips/june-satfield-c.jpg');
 }

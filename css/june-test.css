@@ -1,5 +1,5 @@
 body {
-    background-color: #2a2a2a;
+    background-color: #000;
     /*    background-color: #FFFAD5;*/
 }
 
@@ -189,6 +189,18 @@ a {
     background-image: url('../imgs/june_strips/june-desert-c.jpg');
 }
 
+
+.panel.satFieldOne {
+    background-image: url('../imgs/june_strips/june-satfield-a.jpg');
+}
+
+.panel.satFieldTwo {
+    background-image: url('../imgs/june_strips/june-satfield-b.jpg');
+}
+
+.panel.satFieldThree {
+    background-image: url('../imgs/june_strips/june-satfield-c.jpg');
+}
 
 /* CHARLIE STRIPS */
 
