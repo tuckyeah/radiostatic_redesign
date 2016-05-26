@@ -73,7 +73,7 @@
     float: left;
     height: 98vh;
     position: absolute;
-    z-index: -99;
+    z-index: 100;
     width: 20%;
 /*    margin-top: -7%;*/
     padding: 0px;

@@ -132,6 +132,14 @@ a {
     color: #fff;
     border: 1px solid #fff;
 }
+
+.leopoldDreams {
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 15px  #fff;
+    padding: 20px;
+    margin-top: 100px;
+}
 /*used on index.html for the typewriter linkbox*/
 .typeWriterBox {
     width: 20%;

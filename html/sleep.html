@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+    <title>Test</title>
+    
+    <style>
+        
+        .container {
+            margin-left: 30%;
+            margin-top: 10%;
+        }
+        
+        .text {
+            font-size:50px;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            color: rgba(221, 221, 221, 0)
+        }
+        
+        .blur {
+            text-shadow: 0px 0px 10px rgba(199, 199, 199, 0.6), 0px 0px 30px rgba(199, 199, 199, 0.4), 0px 0px 50px rgba(199, 199, 199, 0.3), 0px 0px 180px rgba(199, 199, 199, 0.3);
+        }
+    </style>
+    
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', function() {
+                $('.blur').animate({color: "#000"}, 800)
+            })
+        })
+    
+    </script>
+</head>
+<body>
+   
+   <div class="container">
+       <div class="text blur">
+           <p>Sleep.</p>
+       </div>
+   </div>
+    
+</body>
+</html>
