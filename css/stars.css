@@ -195,14 +195,14 @@
 }
 
 .nameBox#charlie {
-    color: #FFF;
+    color: rgba(234, 234, 234, 0.9);
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .constellationSideBar .nameBox#charlie {
     top: 0;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .nameBox#leopold {

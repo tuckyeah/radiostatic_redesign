@@ -12,62 +12,6 @@
         <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
         <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
         <script src="../../js/alt_script.js"></script>
-
-        <script>
-            
-            // i feel like there's a way to combine these two functions...
-            // or at least have them on my alt_script / page specific function
-            
-            var n = 0;
-            var clicks = 0;
-            
-            function coverPanels() {
-                switch (n) {
-                    case 0:
-                        $('.coverUp').show();
-                        break;
-                    case 1:
-                        $('.one').fadeOut('slow');
-                        break;
-                    case 2:
-                        $('.two').fadeOut('slow');
-                        break;
-                }
-                n++;
-            }
-            
-            function onPageClick() {
-                $('.active').fadeIn(800);
-                var currentSection = $('.active')
-                var nextSection = currentSection.next('.section')
-                coverPanels();
-                console.log(clicks);
-
-                var visCover = ($('.coverUp:visible')).length;
-                
-                if (clicks = 0) {
-                    $(currentSection).fadeIn('slow');
-                }
-                
-                if (nextSection.length != 0) {
-                    if (visCover == 0) {
-                        $(currentSection).fadeOut('slow', function() {
-                            n = 0
-                            coverPanels();
-                            currentSection.removeClass('active');
-                            nextSection.fadeIn(1200).addClass('active')
-                        });
-                    }
-                } else if (nextSection.length == 0) {
-                    if (visCover - 1 == 0) {
-                        $('main').wrapInner('<a href="june-2.html" />')
-                    }
-                }
-                clicks++;
-            }
-
-        </script>
-
     </head>
 
     <body>
@@ -145,7 +89,8 @@
 
                             <table class="main" id="airstream">
                                 <td>
-                                    <p>We'd been driving through the desert for what felt like an eternity. The car was sticky hot. </p>
+                                    <p>We arrived at the outpost after what seemed like an eternity of driving through the desert.</p>
+                                    <p>I'm not trying to be purposefully vague with this description, only accurate. Somewhere along the highway my sense of time started to distort, so I can no longer be entirely sure of how much time exactly had passed.</p>
                                 </td>
 
                                 <td>
