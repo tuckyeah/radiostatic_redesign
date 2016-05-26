@@ -150,6 +150,13 @@ a {
     padding: 20px;
     margin-top: 100px;
 }
+
+#moon {
+    background-image: url("../imgs/transparent_moon.png");
+    background-repeat: no-repeat;
+    width: 800px;
+}
+
 /*used on index.html for the typewriter linkbox*/
 .typeWriterBox {
     width: 20%;

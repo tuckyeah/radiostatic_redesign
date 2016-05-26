@@ -189,7 +189,7 @@ a {
     background-image: url('../imgs/june_strips/june-desert-c.jpg');
 }
 
-
+/*june-5*/
 .panel.satFieldOne {
     background-image: url('../imgs/june_strips/june-satfield-a.jpg');
 }
@@ -202,6 +202,31 @@ a {
     background-image: url('../imgs/june_strips/june-satfield-c.jpg');
 }
 
+/*june-6*/
+
+.panel.mtnDesertOne {
+    background-image: url('../imgs/june_strips/june-desertmountains-a.jpg');
+}
+
+.panel.mtnDesertTwo {
+    background-image: url('../imgs/june_strips/june-desertmountains-b.jpg');
+}
+
+.panel.mtnDesertThree {
+    background-image: url('../imgs/june_strips/june-desertmountains-c.jpg');
+}
+
+.panel.missingOne {
+    background-image: url('../imgs/june_strips/june-missing-a.jpg');
+}
+
+.panel.missingTwo {
+    background-image: url('../imgs/june_strips/june-missing-b.jpg');
+}
+
+.panel.missingThree {
+    background-image: url('../imgs/june_strips/june-missing-c.jpg');
+}
 /* CHARLIE STRIPS */
 
 /*MEDIA QUERIES*/

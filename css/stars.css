@@ -140,6 +140,10 @@
     box-shadow: 0 0 0px rgba(255, 255, 255, 0);
 }
 
+.nightSky .lowOpacity .star {
+    background-color: rgb(80, 80, 80);
+}
+
 .lowOpacity .star {
     background-color: rgb(111, 111, 111);
     box-shadow: 0 0 0px #FFF;
@@ -197,6 +201,7 @@
 .nameBox#charlie {
     color: rgba(234, 234, 234, 0.9);
     font-family: 'Josefin Sans', sans-serif;
+    margin-top: 15%;
 }
 
 .constellationSideBar .nameBox#charlie {

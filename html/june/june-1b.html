@@ -12,20 +12,32 @@
         <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
         <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
         <script src="../../js/alt_script.js"></script>
+        
+        <script>
+            function pageSpecificFunction() {
+
+                if (currentSection == 1 && currentStage == 4) {  
+                    $("#june").css("visibility", "visible");
+                    $('.juneConstellation').removeClass('lowOpacity', function() {
+                        $('.juneConstellation .star:first-child').addClass('activated')
+                    });
+                }
+            }                
+        </script>
     </head>
 
-    <body> 
-        <div class="stars"></div>
+    <body >
         <main>
+            <div class="stars"></div>
 
             <div class="mainContainer">
                 <div class="constellationSideBar" style="width: 15%;">
                     <div class="constellations">
 
                         <!--           June Constellation -->
-                        <div class="juneConstellation">
-                            <div class="star activated" id="june-1"></div>
-                            <div class="star activated" id="june-2"></div>
+                        <div class="juneConstellation lowOpacity">
+                            <div class="star" id="june-1"></div>
+                            <div class="star" id="june-2"></div>
                             <div class="star" id="june-3"></div>
                             <div class="star" id="june-4"></div>
                             <div class="star" id="june-5"></div>
@@ -35,7 +47,7 @@
                             <div class="star" id="june-9"></div>
                             <div class="star" id="june-10"></div>
                             <div class="star" id="june-11"></div>
-                            <div class="nameBox" id="june">
+                            <div class="nameBox" id="june" style="visibility: hidden">
                                 <p>June <br />
                                     Variable</p>
                             </div>   
@@ -86,7 +98,8 @@
                                 <div class="panel airStreamOne">
                                     <div class="outer">
                                         <div class="middle">
-                                            <p>We'd been driving through the desert for what felt like an eternity, following Charlie's latest spark of intuition. The car was sticky hot. </p>
+                                            <p>We'd been driving through the desert for what felt like an eternity, following Charlie's latest spark of intuition.</p>
+                                            <p>I'm not trying to be purposefully vague with this description, only accurate. Somewhere along the highway my sense of time started to distort, so I can no longer be entirely sure of how much time exactly had passed.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="section-1">
                             <div class="fadeIn">
                                 <div class="panel lightsOne">
@@ -123,7 +136,7 @@
                                     </div>
                                 </div>
                             </div>
-                               <div class="fadeIn">
+                            <div class="fadeIn">
                                 <div class="panel lightsTwo">
                                     <div class="outer">
                                         <div class="middle">
@@ -132,24 +145,23 @@
                                     </div>
                                 </div>
                             </div>
-                               <div class="fadeIn">
+                            <div class="fadeIn">
                                 <div class="panel lightsThree">
                                     <div class="outer">
                                         <div class="middle">
-                                           <a href="june-2a.html"></a>
-                                            <p>I tried to remember who said that phrase,</p>
+                                            <a href="../night_sky_june.html"></a>
+                                            <p>Note to self: look up who said</p>
                                             <br />
                                             <p>"Hope Springs Eternal."</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="fadeIn"></div>
                         </div>
                     </div>
                 </div>
-    </main>
-
-
+            </div>
+        </main>
 
 </body>

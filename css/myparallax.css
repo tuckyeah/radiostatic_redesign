@@ -1,0 +1,103 @@
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+}
+
+body {
+    background-color: black;
+    font-family: monospace;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module p:last-child {
+    margin-bottom: 0;
+}
+
+section.module {
+    background-color: black;
+}
+
+section.module.content {
+    padding: 40px;
+    background-color: white;
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 2;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+section.module.parallax h1 {
+    text-align: center;
+    color: white;
+    line-height: 800px;
+    font-size: 80px;
+    text-shadow: 0 0 5px #B8E6B8, 0 0 10px #B2FFFF, 0 0 15px #E6FFE6;
+}
+
+section.module.parallax-1 {
+    background-image: url("../imgs/themoon.jpg");
+}
+
+section.module.parallax-2 {
+    background-image: url("../imgs/themoon.jpg");
+}
+
+section.module.parallax-3 {
+    background-image: url("imgs/nightsky.jpg");
+    background-size: cover;
+    height: 1500px;
+}
+
+section.module.parallax-4 {
+    background-image: url('../imgs/barn.jpg');
+    background-size: cover;
+    height: 900px;
+}
+
+section.module.parallax-5 {
+    background-image: url('../imgs/fire.jpg');
+    background-size: cover;
+    height: 1000px;
+}
+
+section.module.parallax h2 {
+    color: #FFF;
+    font-size: 100px;
+    line-height: 900px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;;
+}

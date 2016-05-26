@@ -23,18 +23,13 @@
                 backgroundColor: "#FFF"}, '800');
             $('#june').fadeIn('slow');
             $('.juneConstellation .star:first-child').addClass('activated');
-            $('.juneConstellation').wrap('<a href="june/june-1b.html" />')
+            $('.juneConstellation').wrap('<a href="june/june-2a.html" />')
             
         }
         
         $(document).ready(function() {
             $('#june').hide();
-            $(document).on('click', function() {
-               onPageClick();
-            });
-            $(document).keypress(function() {
-                onPageClick();
-            })
+                setTimeout(onPageClick, 800)
         });
     </script>
     
