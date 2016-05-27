@@ -26,7 +26,7 @@ body.blackBkgd {
     color: #fff;
     opacity: 0.7;
     font-size: 10px;
-    
+
 }
 
 /*--------------------HEADER----------------------*/
@@ -72,7 +72,7 @@ a {
 .content.textOnly {
     margin-top: 25%;
 
-    
+
 }
 .content.fixedWidth {
     width: 540px;
@@ -90,6 +90,85 @@ a {
 .middle {
     display: table-cell;
     vertical-align: middle;
+}
+
+.starContainer {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 50px;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    25% {
+        -webkit-transform: scale(0.8);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        opacity: 1;
+    }
+    25% {
+        -moz-transform: scale(0.8);
+        opacity: 1;
+    }
+    50% {
+        -moz-transform: scale(1);
+        opacity: 1;
+    }
+    75% {
+        -moz-transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.moonButton {
+    margin-top: 15px;
+    margin-left: 52%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -20px 0px 0 0 #3c3c3c;
+
+}
+
+.moonButton.blink {
+    animation: pulse 5s linear;
+    -webkit-animation: pulse 5s linear;
+    -moz-animation: pulse 5s linear;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    opacity: 1;
+    
+}
+
+.lowOpacity .moonButton {
+    opacity: 0.3;
+    
 }
 /*--------------------IMAGE CLASSES----------------------*/
 
@@ -151,6 +230,33 @@ a {
     margin-top: 100px;
 }
 
+.blurred {
+    font-size: 25px;
+    line-height: initial;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 10px rgba(199, 199, 199, 0.6), 0px 0px 30px rgba(199, 199, 199, 0.4), 0px 0px 50px rgba(199, 199, 199, 0.3), 0px 0px 180px rgba(199, 199, 199, 0.3);
+    font-weight: 600;
+    color: rgba(221, 221, 221, 0)
+}
+.moonBox {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-y: hidden;
+}
+
+.moonText {
+    color: white;
+    height: auto;
+    width: 410px;
+    position: relative;
+    margin-top: 150px;
+    padding: 10px;
+    font-size: 16px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    max-height: inherit;
+}
 #moon {
     background-image: url("../imgs/transparent_moon.png");
     background-repeat: no-repeat;
@@ -295,28 +401,28 @@ a {
 
 
 @media only screen and (max-width: 500px) {
-    
+
     .content { 
         width: 90%; 
         padding: 10px 0;
     }
-    
+
     .content.textonly {
         width: auto;
         margin-left: 35px;
         margin-right: 35px;
     }
 
-        
+
 }
 
 /*iPhone 6s Plus for my Monster Phone */
 /*@media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) {
-        #introPage.content { 
-        color: #f00 !important; 
-    }
+#introPage.content { 
+color: #f00 !important; 
+}
 }*/
 
 

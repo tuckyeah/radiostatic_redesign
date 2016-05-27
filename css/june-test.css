@@ -227,6 +227,18 @@ a {
 .panel.missingThree {
     background-image: url('../imgs/june_strips/june-missing-c.jpg');
 }
+
+.panel.starsOne {
+    background-image: url('../imgs/june_strips/june-stars-a.png');
+}
+
+.panel.starsTwo {
+    background-image: url('../imgs/june_strips/june-stars-b.png');
+}
+
+.panel.starsThree {
+    background-image: url('../imgs/june_strips/june-stars-c.png')
+}
 /* CHARLIE STRIPS */
 
 /*MEDIA QUERIES*/

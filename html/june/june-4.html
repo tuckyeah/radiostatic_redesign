@@ -10,6 +10,25 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="../../js/alt_script.js"></script>
+    
+    <script>
+        function addStarBlink() {
+            console.log(currentSection)
+            console.log(currentStage)
+            if (currentSection == 2 && currentStage == 4) {
+                $('.moonButton').addClass('blink', function() {
+                    $('.moonButton').removeClass('lowOpacity');
+                })
+
+            }
+        }
+
+        function pageSpecificFunction() {
+            addStarBlink();
+            console.log(currentSection)
+            console.log(currentStage)
+        }
+    </script>
 </head>
 <body>
    <div class="stars"></div>
@@ -66,9 +85,7 @@
                 </div>
 
                 <div class="bartenderConstellation lowOpacity">
-                    <div class="star" id="bartender-first"></div>
-                    <div class="star" id="bartender-second"></div>
-                    <div class="star" id="bartender-third"></div>
+                <div class="moonButton"></div>
                 </div>
 
             </div>
@@ -177,6 +194,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="fadeIn"></div>
                 </div>
                 
             </div>

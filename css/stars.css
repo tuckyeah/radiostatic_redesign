@@ -98,18 +98,95 @@
     height: 250px;
 }
 
-/* Pretty sure i can just delete this entirely
-.star {
-    background-color: #FFF;
-    box-shadow: 0 0 3px #B8E6B8, 0 0 5px #B2FFFF, 0 0 10px #E6FFE6;
-    height: 5px;
-    width: 5px;
-    margin: 10px;
-    display: none;
-    position: absolute;
-    border-radius: 40px;
+/*-----PULSING STAR ANIMATION------*/
+.moonButton {
+    margin-top: 15px;
+    margin-left: 52%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -20px 0px 0 0 #3c3c3c;
+
 }
-*/
+
+.moonButton.blink {
+    animation: pulse 5s linear;
+    -webkit-animation: pulse 5s linear;
+    -moz-animation: pulse 5s linear;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    opacity: 1;
+
+}
+
+.lowOpacity .moonButton {
+    opacity: 0.3;
+}
+
+.nightSky .moonButton {
+    box-shadow: -20px 0px 0 0 rgb(80, 80, 80);
+    margin-top: 80%;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.25);
+        opacity: 1;
+    }
+    25% {
+        -webkit-transform: scale(1.5);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(1.25);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.25);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1.25);
+        opacity: 1;
+    }
+    25% {
+        -moz-transform: scale(1.5);
+        opacity: 1;
+    }
+    50% {
+        -moz-transform: scale(1.25);
+        opacity: 1;
+    }
+    75% {
+        -moz-transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: scale(1.25);
+        opacity: 1;
+    }
+}
+
+.activeBlink {
+    display: inline-block;
+    background-color: #fff !important;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.7), 0 0 6px  rgba(245, 253, 183, 0.6), 0 0 11px  rgba(255, 255, 117, 0.3) !important;
+    border: 2px solid #fff;
+    -webkit-animation: pulse 5s linear;
+    -moz-animation: pulse 5s linear;
+    animation: pulse 5s linear;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
 
 .constellations .star {
     display: block;
@@ -133,6 +210,12 @@
     background-color: #FFF;
     opacity: 0.9;
     box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.7), 0 0 6px 10px rgba(245, 253, 183, 0.6), 0 0 11px 15px rgba(255, 255, 117, 0.3);
+    -webkit-animation: star-pulse 3s ease-out;
+    -moz-animation: star-pulse 3s ease-out;
+    animation: star-pulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .nightSky .lowOpacity .star.activated {
@@ -435,7 +518,7 @@
 
 .constellations .star#june-2 {
     top: 10%;
-    left: 50%;
+    left: 40%;
     height: 6px;
     width: 6px;
 }

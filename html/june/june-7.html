@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>==JUNE==</title>
+    <title>JUNE VARIABLE</title>
     
     <link rel="stylesheet" href="../../css/june-test.css">
     <link rel="stylesheet" href="../../css/stars.css">
@@ -10,31 +10,14 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="../../js/alt_script.js"></script>
-    
-    <script>
-        function addStarBlink() {
-            if (currentSection == 0 && currentStage == 4) {
-                $('#tollbooth').addClass('activeBlink')
-
-            }
-        }
-
-        function pageSpecificFunction() {
-            addStarBlink();
-            console.log(currentSection)
-            console.log(currentStage)
-        }
-    </script>
-
 </head>
 <body>
-    <div class="stars"></div>
     <div class="mainContainer">
         <div class="constellationSideBar" style="width: 15%;">
             <div class="constellations">
 
                 <!--           June Constellation -->
-                <div class="juneConstellation">
+                <div class="juneConstellation lowOpacity">
                     <div class="star activated" id="june-1"></div>
                     <div class="star activated" id="june-2"></div>
                     <div class="star activated" id="june-3"></div>
@@ -46,15 +29,14 @@
                     <div class="star" id="june-9"></div>
                     <div class="star" id="june-10"></div>
                     <div class="star" id="june-11"></div>
-                    <div class="nameBox" id="june">
+                    <div class="nameBox" id="june" style="visibility:hidden">
                         <p>June <br />
                             Variable</p>
                     </div>   
                 </div>
                 <!--          Charlie Constellation -->
-                <div class="charlieConstellation lowOpacity">         
-                   <div class="star activated" id="num2crush"></div>
-                    <div class="star" id="tollbooth"></div>
+                <div class="charlieConstellation">         <div class="star activated" id="num2crush"></div>
+                    <div class="star activated" id="tollbooth"></div>
                     <div class="star" id="meetJune"></div>
                     <div class="star" id="thePlan"></div>
                     <div class="star" id="nowWhat"></div>
@@ -64,6 +46,10 @@
                     <div class="star" id="theBar"></div>
                     <div class="star" id="dayDreamer"></div>
                     <div class="star" id="radio"></div>
+                    <div class="nameBox" id="charlie">
+                        <p>Charlie <br />
+                            Waits</p>
+                    </div>   
                 </div>
 
                 <!--         Leopold Constellation -->
@@ -73,7 +59,7 @@
                     <div class="star activated" id="letter2"></div>
                     <div class="star activated" id="tripreport"></div>
                     <div class="star activated" id="datura"></div>
-                    <div class="star" id="thewicked"></div>
+                    <div class="star activated" id="thewicked"></div>
                     <div class="star" id="nightshade"></div>
                     <div class="star" id="drive"></div>
                     <div class="star" id="meetCharlie"></div>
@@ -83,49 +69,46 @@
                 </div>
 
                 <div class="bartenderConstellation lowOpacity">
-                <div class="moonButton"></div>
+                    <div class="moonButton"></div>
                 </div>
 
             </div>
         </div>
-       <div class="comicContainer">
-           <div class="content">
-               <div class="section-0">
-                   <div class="fadeIn">
-                       <div class="panel satFieldOne">
-                           <div class="outer">
-                               <div class="middle">
-                                   <p>We woke up shortly after sunrise and began the long trek into the desert. </p>
-                                  <p>There we found what I believe Leopold was referring to.</p>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="fadeIn">
-                       <div class="panel satFieldTwo">
-                           <div class="outer">
-                               <div class="middle">
-                                   <p>A sea of satellites, stretching all the way out into the mountains. By the looks of things, they are abandoned and long forgotten. </p>
-                                   <p>Still, there is a hum of energy in the air - not electricity, but something else.</p>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="fadeIn">
-                       <div class="panel satFieldThree">
-                           <div class="outer">
-                               <div class="middle">
-                                  <a href="../charlie/charlie-2.html"></a>
-                                   <p>"Is this what he was talking about?" I asked. "This is where his son is?"</p>
-                                   <p>Charlie hesitated. "Let's look around. I just... I can feel something. I can't explain it." </p>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="fadeIn"></div>
-               </div>
-           </div>
-       </div> 
+        
+        <div class="comicContainer">
+            <div class="section-0">
+                <div class="fadeIn">
+                    <div class="panel">
+                        <div class="outer">
+                            <div class="middle">
+                                <p>We ran back to the Winnebago, but both it and the old man were nowhere to be found. I started to follow the tire tracks into the horizon before Charlie called me back.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fadeIn">
+                    <div class="panel">
+                        <div class="outer">
+                            <div class="middle">
+                                <p>"He's gone, June. It's useless. He's not the oen we're looking for."</p>
+                                <p>"What? How can you be sure?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fadeIn">
+                    <div class="panel">
+                        <div class="outer">
+                            <div class="middle">
+                                <p>"I found something under a rock. Another entry. It looks like a confession if you ask me..."
+                                <a href="../leopold/howl.html"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </div>
 </body>
 </html>

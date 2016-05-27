@@ -11,6 +11,23 @@
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="../../js/alt_script.js"></script>
+    
+    <script>
+    
+        function addStarBlink() {
+            if (currentSection == 1 && currentStage == 2) {
+                $('.moonButton').addClass('blink')
+
+            }
+        }
+
+        function pageSpecificFunction() {
+            addStarBlink();
+            console.log(currentSection)
+            console.log(currentStage)
+        }
+    
+    </script>
 
 </head>
 <body class="leopoldBkgd">
@@ -71,9 +88,7 @@
             </div>
 
             <div class="bartenderConstellation lowOpacity">
-                <div class="star" id="bartender-first"></div>
-                <div class="star" id="bartender-second"></div>
-                <div class="star" id="bartender-third"></div>
+            <div class="moonButton"></div>
             </div>
 
         </div>
@@ -98,6 +113,7 @@
                         <h3>"I will write to you as soon as I get there," you promised, just before I pulled the trigger.</h3>
                     </div>
                 </div>
+                <div class="fadeIn"></div>
             </div>
         </div>
     </div>

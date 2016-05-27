@@ -9,6 +9,23 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="../../js/alt_script.js"></script>
+    <script>
+        function addStarBlink() {
+            if (currentSection == 1 && currentStage == 4) {
+                $('.moonButton').addClass('blink', function() {
+                    $('.moonButton').removeClass('lowOpacity');
+                })
+
+            }
+        }
+
+        function pageSpecificFunction() {
+            addStarBlink();
+            console.log(currentSection)
+            console.log(currentStage)
+        }
+    </script>
+
 
 </head>
 <body>
@@ -69,9 +86,13 @@
                   </div>
 
                   <div class="bartenderConstellation lowOpacity">
+<!--
                       <div class="star activated" id="bartender-first"></div>
                       <div class="star" id="bartender-second"></div>
                       <div class="star" id="bartender-third"></div>
+-->
+                 
+                 <div class="moonButton"></div>
                   </div>
 
               </div>
@@ -125,7 +146,7 @@
                                      <div class="middle">
                                          <p>"Hey June?"</p>
                                          <p>"Yes, Charlie?"</p>
-                                         <p>"What's it like to be a dream?"</p>
+                                         <p>"Do you remember how we met?"</p>
                                      </div>
                                  </div>
                              </div>
@@ -134,9 +155,10 @@
                              <div class="panel milkyWayTwo">
                                  <div class="outer">
                                      <div class="middle">
-                                         <p>"About the same as not being in one, I'd imagine. I don't think about it much."</p>
-                                         <p>"You can't tell the difference between being awake and asleep?"</p>
-                                         <p>"I didn't even know there was a difference."</p>
+                                         <p>"What kind of question is that?"</p>
+                                         <p>"I was just asking. Do you ever wonder if sometimes maybe you're asleep and you don't know it?"</p>
+                                         <p>"That's an even stranger question."</p>
+                                         <p>"You're right. Nevermind."</p>
                                      </div>
                                  </div>
                              </div>
@@ -146,13 +168,14 @@
                                  <div class="outer">
                                      <div class="middle">
                                         <a href="../leopold/confessions.html"></a>
-                                         <p>"Hey June?"
-                                         <p>"Yes Charlie?"</p>
-                                         <p>"I'm glad we met. Even if it's only when I'm sleeping."</p>
-                                         <p>"Me too, Charlie. Me too."</p>
+                                         <p>"...Hey June?"
+                                         <p>"Yes, Charlie?"</p>
+                                         <p>"I'm glad we met. Dream or no dream."</p>
+                                         <p>"...Me too, Charlie. Me too."</p>
                                      </div>
                                  </div>
                              </div>
+                             <div class="fadeIn"></div>
                          </div>
                      </div>
                      

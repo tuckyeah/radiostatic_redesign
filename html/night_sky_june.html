@@ -22,10 +22,9 @@
             $('.juneConstellation .star').animate({
                 backgroundColor: "#FFF"}, '800');
             $('#june').fadeIn('slow');
-            $('.juneConstellation .star:first-child').addClass('activated');
-            $('.juneConstellation').wrap('<a href="june/june-2a.html" />')
+            $('.juneConstellation .star:first-child').addClass('activeBlink');
+            }
             
-        }
         
         $(document).ready(function() {
             $('#june').hide();
@@ -53,16 +52,21 @@
            </div>
 
            <div class="bartenderConstellation">
+<!--
                <div class="star" id="bartender-first"></div>
                <div class="star" id="bartender-second"></div>
                <div class="star" id="bartender-third"></div>
+-->
+               <div class="moonButton"></div>
 
 
            </div>
            <div class="charlieAndJune">
                <!--JUNE CONSTELLATION-->
                <div class="juneConstellation">
+                  <a href="june/june-1b.html">
                    <div class="star" id="june-1"></div>
+                   </a>
                    <div class="star" id="june-2"></div>
                    <div class="star" id="june-3"></div>
                    <div class="star" id="june-4"></div>

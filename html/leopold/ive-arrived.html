@@ -13,14 +13,18 @@
         <script src="../../js/alt_script.js"></script>
         
         <script>
-//            function pageSpecificFunction() {
-//                if (currentStage == 2) {
-//                    $('.constellationSideBar').removeClass('onBlack');
-//                    $('body').animate({backgroundColor: "#FFF"}, '800', function() {
-//                        $('body').removeClass('blackBkgd');
-//                    })
-//                }
-//            }
+            function addStarBlink() {
+                if (currentSection == 2 && currentStage == 2) {
+                    $('.moonButton').addClass('blink')
+
+                }
+            }
+
+            function pageSpecificFunction() {
+                addStarBlink();
+                console.log(currentSection)
+                console.log(currentStage)
+            }
         </script>
 
     </head>
@@ -85,9 +89,8 @@ Variable</p>
                 </div>
 
                 <div class="bartenderConstellation lowOpacity">
-                    <div class="star" id="bartender-first"></div>
-                    <div class="star" id="bartender-second"></div>
-                    <div class="star" id="bartender-third"></div>
+                <div class="moonButton"></div>
+
                 </div>
 
             </div>
@@ -140,6 +143,7 @@ Variable</p>
                         </p>
                     </div>
                 </div>
+                <div class="fadeIn"></div>
             </div>
         </div>
         </div>

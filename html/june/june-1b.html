@@ -13,17 +13,35 @@
         <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
         <script src="../../js/alt_script.js"></script>
         
+<!--
         <script>
             function pageSpecificFunction() {
 
                 if (currentSection == 1 && currentStage == 4) {  
                     $("#june").css("visibility", "visible");
                     $('.juneConstellation').removeClass('lowOpacity', function() {
-                        $('.juneConstellation .star:first-child').addClass('activated')
+                        $('.juneConstellation .star:first-child').addClass('activeBlink')
                     });
                 }
             }                
         </script>
+-->
+   
+   <script>
+       function addStarBlink() {
+           if (currentSection == 1 && currentStage == 4) {
+               $('.star.activated').next().addClass('activeBlink')
+
+           }
+       }
+       
+       function pageSpecificFunction() {
+           addStarBlink();
+           console.log(currentSection)
+           console.log(currentStage)
+       }
+        
+    </script>
     </head>
 
     <body >
@@ -35,8 +53,8 @@
                     <div class="constellations">
 
                         <!--           June Constellation -->
-                        <div class="juneConstellation lowOpacity">
-                            <div class="star" id="june-1"></div>
+                        <div class="juneConstellation">
+                            <div class="star activated" id="june-1"></div>
                             <div class="star" id="june-2"></div>
                             <div class="star" id="june-3"></div>
                             <div class="star" id="june-4"></div>
@@ -47,7 +65,7 @@
                             <div class="star" id="june-9"></div>
                             <div class="star" id="june-10"></div>
                             <div class="star" id="june-11"></div>
-                            <div class="nameBox" id="june" style="visibility: hidden">
+                            <div class="nameBox" id="june">
                                 <p>June <br />
                                     Variable</p>
                             </div>   
@@ -149,7 +167,7 @@
                                 <div class="panel lightsThree">
                                     <div class="outer">
                                         <div class="middle">
-                                            <a href="../night_sky_june.html"></a>
+                                            <a href="june-2a.html"></a>
                                             <p>Note to self: look up who said</p>
                                             <br />
                                             <p>"Hope Springs Eternal."</p>
