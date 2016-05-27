@@ -13,6 +13,7 @@ a:hover {
 body {
     background-color: black;
     font-family: monospace;
+    font-size: 15px;
 }
 
 main {
@@ -23,6 +24,7 @@ main {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 section.module:last-child {
@@ -88,16 +90,16 @@ section.module.parallax-4 {
 }
 
 section.module.parallax-5 {
-    background-image: url('../imgs/fire.jpg');
+    background-image: url('../imgs/june_strips/firehouse.jpg');
     background-size: cover;
     height: 1000px;
 }
 
 section.module.parallax h2 {
     color: #FFF;
-    font-size: 100px;
+    font-size: 20px;
     line-height: 900px;
     font-weight: 700;
     text-align: center;
-    text-transform: uppercase;;
+
 }

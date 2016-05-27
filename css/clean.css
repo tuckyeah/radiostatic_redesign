@@ -102,56 +102,86 @@ a {
 @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
-        opacity: 1;
     }
     25% {
         -webkit-transform: scale(0.8);
-        opacity: 1;
+
     }
     50% {
         -webkit-transform: scale(1);
-        opacity: 1;
+
     }
     75% {
         -webkit-transform: scale(0.8);
-        opacity: 1;
     }
     100% {
         -webkit-transform: scale(1);
-        opacity: 1;
     }
 }
 
 @-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
-        opacity: 1;
     }
     25% {
         -moz-transform: scale(0.8);
-        opacity: 1;
     }
     50% {
         -moz-transform: scale(1);
-        opacity: 1;
     }
     75% {
         -moz-transform: scale(0.8);
-        opacity: 1;
     }
     100% {
         -moz-transform: scale(1);
-        opacity: 1;
     }
 }
 
+
+@-moz-keyframes moonPulse {
+    0% {
+        -moz-transform: scale(1);
+    }
+    25% {
+        -moz-transform: scale(1.25);
+    }
+    50% {
+        -moz-transform: scale(1);
+    }
+    75% {
+        -moz-transform: scale(1.25);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes moonPulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(1.25);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(1.25);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
 .moonButton {
-    margin-top: 15px;
+    margin-top: 85px;
     margin-left: 52%;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    box-shadow: -20px 0px 0 0 #3c3c3c;
+    box-shadow: -13px 0px 0 0 #3c3c3c;
+    z-index: 5;
+    position: absolute;
 
 }
 
@@ -166,9 +196,34 @@ a {
     
 }
 
+.moonButtonBehind {
+    z-index: -5;
+    opacity: 1;
+    height: 28px;
+    width: 32px;
+    margin-top: 86px;
+    position: absolute;
+    border-radius: 50px;
+    margin-left: 49%;
+    background-color: #6a6a6a;
+    display: inline-block;
+    animation: moonPulse 5s linear;
+    -webkit-animation: moonPulse 5s linear;
+    -moz-animation: moonPulse 5s linear;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    opacity: 0.3;
+}
+
+
 .lowOpacity .moonButton {
     opacity: 0.3;
     
+}
+
+.constellationSideBar .moonButton {
+    margin-top: 20px;
 }
 /*--------------------IMAGE CLASSES----------------------*/
 
@@ -271,7 +326,7 @@ a {
     position: absolute;
     top: 83%;
     left: 40%;
-    border: 1px solid white;
+/*    border: 1px solid white;*/
 }
 
 /*used on intro.html for intro text*/

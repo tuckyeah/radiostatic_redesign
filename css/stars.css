@@ -100,12 +100,12 @@
 
 /*-----PULSING STAR ANIMATION------*/
 .moonButton {
-    margin-top: 15px;
+    margin-top: 85px;
     margin-left: 52%;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    box-shadow: -20px 0px 0 0 #3c3c3c;
+    box-shadow: -13px 0px 0 0 #3c3c3c;
 
 }
 
@@ -125,8 +125,22 @@
 }
 
 .nightSky .moonButton {
-    box-shadow: -20px 0px 0 0 rgb(80, 80, 80);
+    box-shadow: -13px 0px 0 0 rgb(80, 80, 80);
     margin-top: 80%;
+}
+
+.constellationSideBar .moonButton {
+    margin-top: 20px;
+}
+
+.moonButtonBehind {
+    background-color: red;
+    z-index: -5;
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+    margin-top: 80%;
+    display: inline-block;
 }
 
 @-webkit-keyframes pulse {
@@ -326,6 +340,10 @@
     top: 0%;
     margin-left: 5px;
     font-size: 12px;
+}
+
+.constellations.nightSky {
+    padding-top: 20%;
 }
 
 
@@ -845,5 +863,12 @@
     
     .constellations {
         height: 50vh;
+    }
+
+}
+
+@media only screen and (min-height: 500px) {
+    .constellations .nightSky {
+        padding: 10%;
     }
 }
