@@ -235,7 +235,7 @@ a {
     line-height: initial;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 0px 0px 10px rgba(199, 199, 199, 0.6), 0px 0px 30px rgba(199, 199, 199, 0.4), 0px 0px 50px rgba(199, 199, 199, 0.3), 0px 0px 180px rgba(199, 199, 199, 0.3);
+/*    text-shadow: 0px 0px 10px rgba(199, 199, 199, 0.6), 0px 0px 30px rgba(199, 199, 199, 0.4), 0px 0px 50px rgba(199, 199, 199, 0.3), 0px 0px 180px rgba(199, 199, 199, 0.3);*/
     font-weight: 600;
     color: rgba(221, 221, 221, 0)
 }
@@ -415,6 +415,7 @@ a {
 
 
 }
+
 
 /*iPhone 6s Plus for my Monster Phone */
 /*@media only screen 

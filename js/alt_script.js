@@ -82,8 +82,11 @@ $(document).ready(function() {
         onPageClick();
     })
 
-    $(document).keypress(function() {
-        onPageClick(); 
+    $(document).keypress(function(e) {
+
+        if (e.which == 32 || e.which == 13) {
+            onPageClick(); 
+        }
     });
     
 

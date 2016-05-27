@@ -9,28 +9,29 @@
     
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="../../js/alt_script.js"></script>
     
     <script>
     
-        function addStarBlink() {
-            if (currentSection == 1 && currentStage == 2) {
-                $('.moonButton').addClass('blink')
+//        function addStarBlink() {
+//            if (currentSection == 1 && currentStage == 2) {
+//                $('.moonButton').addClass('blink');
+//                $('.bartenderConstellation').removeClass('lowOpacity')
+//
+//            }
+//        }
 
-            }
-        }
-
+        var n = 0
         function pageSpecificFunction() {
-            addStarBlink();
-            console.log(currentSection)
-            console.log(currentStage)
+            $('.section-'+n+' .blurred').animate({color: "#000"}, 2500);
+            n++;
+
         }
     
     </script>
 
 </head>
-<body class="leopoldBkgd">
+<body>
     <div class="constellationSideBar" style="width: 15%;">
         <div class="constellations">
 
@@ -93,13 +94,21 @@
 
         </div>
     </div>
-       <div class="outer">
-       <div class="middle">
+          <div class="container">
            <div class="content">
             <div class="section-0">
                 <div class="fadeIn">
-                    <div class="leopoldAlt">
-                        <p>When you pulled the barrel of my shotgun and nuzzled it against your heart-shaped chin That Night, I knew there was no turning back.</p>
+                    <div class="blurred">
+                       
+<!--
+                        <p>He was wicked all along, my darling; you knew as well as I.</p>
+
+                        <p>The wolves had taken him when he was nothing but a Babe and ate all that made him human, hollowing him out,</p>
+
+                        <p>leaving nothing but flesh and bone and misery and murder.</p>
+-->
+                   <p>When you pulled the barrel of my shotgun and nuzzled it against your heart-shaped chin That Night, I knew there was no turning back.</p>
+
                         <p>"I've got to do it," you said, as if you could read my mind, My Dear. I stared into your eyes down the barrel of the shotgun, my finger trembling on the trigger, but you were so confident, so sure. "It's the only way to go. I must do it for us, for Our Sweet Jeremiah. Please understand."</p>
                         <p>You put your both your hands on the barrel to steady it, for my hands were shaking Something Awful. I could feel the bones of your jaw through its metal, and for a brief moment, we were connected by that shotgun, all of us one living being.</p>
                     </div>
@@ -108,7 +117,7 @@
             
             <div class="section-1">
                 <div class="fadeIn">
-                    <div class="leopoldAlt">
+                    <div class="blurred">
                        <a href="../june/june-5.html"></a>
                         <h3>"I will write to you as soon as I get there," you promised, just before I pulled the trigger.</h3>
                     </div>
@@ -116,7 +125,6 @@
                 <div class="fadeIn"></div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 </html>
