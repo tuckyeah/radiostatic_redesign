@@ -872,3 +872,11 @@
         padding: 10%;
     }
 }
+
+@media only screen and (min-height: 700px) {
+
+    .constellations {
+        margin-top: 0%;
+    }
+}
+}
