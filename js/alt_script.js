@@ -63,7 +63,7 @@ $(document).ready(function() {
     
     $('.fadeIn').hide();
     $('.active').hide();
-    $("html").css('cursor', 'pointer');
+    $(".content").css('cursor', 'pointer');
 
     allowClicks = true;
 
@@ -89,6 +89,11 @@ $(document).ready(function() {
         }
     });
     
+    $(document).keydown(function(e) {
+        if (e.which == 39) {
+            onPageClick();
+        }
+    });
 
     
     //manually call this once, so we show the first stage on page load

@@ -2,95 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stacked Star Map</title>
-    <link rel="stylesheet" href="../css/stars.css">
-    <link href='http://fonts.googleapis.com/css?family=Special+Elite|Slabo+27px|Josefin+Sans|Pacifico' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-    
-    <script>
-        $(document).ready(function() {
-            $('.constellationSideBar').on('click', function() {
-                $('body').toggleClass('blackSideBarImage');
-            })
-        })
-    </script>
+    <title>test</title>
+    <style>
+    @keyframes pulse {
+    50% {
+    box-shadow: 0 0 0 40px rgba(255,255,255,.2),
+    0 0 0 55px rgba(255,255,255,.4),
+    0 0 0 80px rgba(255, 65, 226, 0.5000);
+    }
+    }
+
+    div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: navy;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+    box-shadow: 0 0 0 10px rgba(255,255,255,.2),
+    0 0 0 20px rgba(255,255,255,.4),
+    0 0 0 30px rgba(255,255,255,.1);
+    border-radius: 50%;
+
+    }
+    div:hover {
+    animation: pulse 1.1s infinite ease-in-out;
+    }
+    body {background: navy;}
+    </style>
 </head>
-<body class="blackSideBarImage">
+<body>
    
-   <div class="constellationSideBar onBlack" style="margin-top: 0%; width: 15%;">
-       <div class="constellations">
-           
-<!--           June Constellation -->
-          <div class="juneConstellation" style="border: 1px solid white;">
-              <div class="star activated" id="june-1"></div>
-              <div class="star" id="june-2"></div>
-              <div class="star" id="june-3"></div>
-              <div class="star" id="june-4"></div>
-              <div class="star" id="june-5"></div>
-              <div class="star" id="june-6"></div>
-              <div class="star" id="june-7"></div>
-              <div class="star" id="june-8"></div>
-              <div class="star" id="june-9"></div>
-              <div class="star" id="june-10"></div>
-              <div class="star" id="june-11"></div>
-              <div class="nameBox" id="june">
-                  <p>June <br />
-                   Variable</p>
-              </div>   
-           </div>
-<!--          Charlie Constellation -->
-           <div class="charlieConstellation" style="border: 1px solid white;">         <div class="star" id="num2crush"></div>
-               <div class="star" id="tollbooth"></div>
-               <div class="star" id="meetJune"></div>
-               <div class="star" id="thePlan"></div>
-               <div class="star" id="nowWhat"></div>
-               <div class="star" id="inside"></div>
-               <div class="star" id="charlieDrive"></div>
-               <div class="star" id="transcripts"></div>
-               <div class="star" id="theBar"></div>
-               <div class="star activated" id="radio"></div>
-               <div class="nameBox" id="charlie">
-                   <p>Charlie <br /> 
-                   Waits</p>
-               </div>   
-           </div>
-           
-<!--         Leopold Constellation -->
-           <div class="leopoldConstellation" style="border: 1px solid white;">
-               <div class="star activated" id="ive-arrived"></div>
-               <div class="star" id="confessions"></div>
-               <div class="star" id="letter2"></div>
-               <div class="star" id="tripreport"></div>
-               <div class="star" id="datura"></div>
-               <div class="star" id="thewicked"></div>
-               <div class="star" id="nightshade"></div>
-               <div class="star" id="drive"></div>
-               <div class="star" id="meetCharlie"></div>
-               <div class="star" id="mescaline"></div>
-               <div class="star" id="howl"></div>
-               <div class="star" id="hydrogen"></div> 
-               <div class="nameBox" id="leopold">
-                   <p>Your<br />
-                    Intrepid<br />
-                     Leopold</p>
-               </div>
-           </div>
-           
-           <div class="bartenderConstellation" style="border: 1px solid white;">
-               <div class="star" id="bartender-first"></div>
-               <div class="star" id="bartender-second"></div>
-               <div class="star" id="bartender-third"></div>
-               <div class="nameBox" id="bartender">
-                   <p>The<br />
-                    Bartender</p>
-               </div>
-
-
-           </div>
-
-       </div>
-   </div>
+   <div></div>
     
 </body>
 </html>

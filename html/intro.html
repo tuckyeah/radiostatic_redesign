@@ -8,20 +8,61 @@
         <link rel="stylesheet" href="../css/stars.css">
         <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
         <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-        <script src="js/alt_script.js"></script>
+        <script
+                src="http://code.jquery.com/ui/1.11.3/jquery-ui.min.js"
+                integrity="sha256-xI/qyl9vpwWFOXz7+x/9WkG5j/SVnSw21viy8fWwbeE="
+                crossorigin="anonymous"></script>
+        <script src="../js/alt_script.js"></script>
         
         <style>
             .constellations.nightSky .star{
-                background-color: rgba(255, 255, 255, 0.9);
-                box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.3)
+                background-color: #ffffcc;
+                box-shadow: 0 0 10px 6px rgba(255, 255, 230, 0.3)
             }
         </style>
+        
+        <script>
+            
+//            Make an array of all the stars
+//            pick two at any given time to pulse.
+            
+
+            function getRandomStar(id) {
+                // picks a random star from all the ids
+                var rand = Math.floor(Math.random() * id.get().length)
+                return rand
+            }
+            
+            function pulse() {
+                
+                var ids = $('.star').map(function(i) {
+                    return this.id
+                });
+                
+                ids.each(function(i) {
+                    var randNum = getRandomStar(ids)
+                    $('#'+this).delay(50*randNum).animate({'opacity':0.5}).delay(100*randNum).animate({'opacity': 1})
+                });
+            }
+            
+            $(document).ready(function() {
+                
+                for(i=0; i<500; i++) {
+                    pulse()
+                }
+                
+            })
+            
+//            function pulse() {
+//                $( ".star" ).delay(200).animate({'opacity':1}).delay(500).animate({'opacity':0.7}, pulse);
+//            }
+//            $(document).ready(function() {
+//                pulse()
+//            })
+        </script>
     </head>
     
-    <body class="backColor">
-        <div class="stars"></div>
-<!--        <div class="twinkling"></div>-->
+    <body class="stars">
         <div class="container">
            
             <div class="content" id="introPage" >
@@ -34,7 +75,7 @@
             </div>
 
            <a href="night_sky_june.html">
-            <div class="constellations nightSky" style="margin-top: -10%; height: 60vh;">
+            <div class="constellations nightSky" style="padding-top: 0%; height: 60vh;">
                 <div class="leopoldConstellation">
                     <div class="star" id="ive-arrived"></div>
                     <div class="star" id="confessions"></div>
@@ -52,9 +93,7 @@
 
 
                 <div class="bartenderConstellation">
-                    <div class="star" id="bartender-first"></div>
-                    <div class="star" id="bartender-second"></div>
-                    <div class="star" id="bartender-third"></div>
+                <div class="moonButton"></div>
 
 
                 </div>

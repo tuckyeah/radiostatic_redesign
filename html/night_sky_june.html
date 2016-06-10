@@ -16,19 +16,121 @@
 -->
     <title>Let The Stars Be Your Guide</title>
     
-    <script>
+    <style>
         
-        function onPageClick() {
-            $('.juneConstellation .star').animate({
-                backgroundColor: "#FFF"}, '800');
-            $('#june').fadeIn('slow');
-            $('.juneConstellation .star:first-child').addClass('activeBlink');
+        @keyframes outward_pulse {
+            50% {
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2),
+                0 0 0 20px rgba(8, 8, 8, 0.4),
+                0 0 0 30px rgba(160, 160, 160, 0.5); 
+
             }
             
+            100% {
+                box-shadow: 0 0 0 20px rgba(0, 0, 0, 0),
+                    0 0 0 35px rgba(8, 8, 8, 0),
+                    0 0 0 60px rgba(160, 160, 160, 0); 
+            }
+        }
         
+        .constellations.nightSky .activeStar {
+            border: 1px solid red;
+/*
+            box-shadow: 0 0 0 10px rgba(255,255,255,.2),
+                0 0 0 20px rgba(255,255,255,.4),
+                0 0 0 30px rgba(255,255,255,.1);
+*/
+        }
+        
+        .constellations.nightSky .juneConstellation .star:hover {
+            animation: outward_pulse 2s infinite ease-in-out;
+        }
+        
+/*
+        .blink {
+            border: 4px solid #898989;
+            background-color: rgba(0, 0, 0, 0.1) !important;
+            border-radius: 40px;
+            height: 30px;
+            width: 30px;
+            display: block;
+            margin-top: -15px;
+            margin-left: -15px;
+            z-index: -15;
+            -webkit-animation: pulsing 3s ease-out;
+            -moz-animation: pulsing 3s ease-out;
+            animation: pulsing 3s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+*/
+        
+        
+        
+/*
+        @-moz-keyframes pulsing {
+            0% {
+                -moz-transform: scale(0);
+                opacity: 0.0;
+            }
+            25% {
+                -moz-transform: scale(0);
+                opacity: 0.3;
+            }
+            50% {
+                -moz-transform: scale(0.1);
+                opacity: 0.5;
+            }
+            75% {
+                -moz-transform: scale(0.5);
+                opacity: 0.7;
+            }
+            100% {
+                -moz-transform: scale(1);
+                opacity: 0.0;
+            }
+        }
+
+        @-webkit-keyframes "pulsing" {
+            0% {
+                -webkit-transform: scale(0);
+                opacity: 0.0;
+            }
+            25% {
+                -webkit-transform: scale(0);
+                opacity: 0.3;
+            }
+            50% {
+                -webkit-transform: scale(0.1);
+                opacity: 0.5;
+            }
+            75% {
+                -webkit-transform: scale(0.5);
+                opacity: 0.7;
+            }
+            100% {
+                -webkit-transform: scale(1);
+                opacity: 0.0;
+            }
+        }
+*/
+    </style>
+    
+    <script>
+
+        function onPageClick() {
+            $('.juneConstellation .star').animate({
+                backgroundColor: "#fffcaa"}, '800');
+            $('#june').fadeIn('slow');
+            $('.juneConstellation .star:first-child').addClass('activeBlink');
+        }
+
+
         $(document).ready(function() {
             $('#june').hide();
-                setTimeout(onPageClick, 800)
+            setTimeout(onPageClick, 800);
+            
         });
     </script>
     
@@ -61,13 +163,16 @@
 
 
            </div>
+           
            <div class="charlieAndJune">
                <!--JUNE CONSTELLATION-->
                <div class="juneConstellation">
                   <a href="june/june-1b.html">
-                   <div class="star" id="june-1"></div>
 
-                   <div class="star" id="june-2"></div>
+                   <div class="star" id="june-1">
+                   </div>
+                   <div class="star" id="june-2">
+                   </div>
                    <div class="star" id="june-3"></div>
                    <div class="star" id="june-4"></div>
                    <div class="star" id="june-5"></div>
@@ -104,7 +209,7 @@
 
        </div>
 
-       <div class="twinkling"></div>
+<!--       <div class="twinkling"></div>-->
    </div>
     
 </body>
