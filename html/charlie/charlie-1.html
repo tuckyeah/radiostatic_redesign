@@ -14,7 +14,9 @@
 
             function addStarBlink() {
             if (currentSection == 1 && currentStage == 4) {
-                $('.moonButton').addClass('blink')
+                $('p').fadeOut('800', function() {
+                    $('.moonButton').animate({opacity: 1}, '800')
+                })
 
             }
         }
@@ -54,7 +56,7 @@
                </div>
                <!--          Charlie Constellation -->
                <div class="charlieConstellation">         <div class="star" id="num2crush"></div>
-                   <div class="star activated" id="tollbooth"></div>
+                   <div class="star current" id="tollbooth"></div>
                    <div class="star" id="meetJune"></div>
                    <div class="star" id="thePlan"></div>
                    <div class="star" id="nowWhat"></div>
@@ -85,10 +87,12 @@
                    <div class="star" id="howl"></div>
                    <div class="star" id="hydrogen"></div> 
                </div>
+<!--
 
                <div class="bartenderConstellation lowOpacity">
                <div class="moonButton"></div>
                </div>
+-->
 
            </div>
        </div>
@@ -143,6 +147,7 @@
                            <div class="outer">
                                <div class="middle">
                                <p>This is the longest we've ever spent together. I've lost track of time. If I fell asleep, I don't remember when. I keep looking at my hands to try and wake myself up, but they seem just as real as I do.</p>
+                               <div class="moonButton panel" style="opacity: 0"></div>
                                </div>
                            </div>
                        </div>
@@ -163,9 +168,8 @@
                    </div>
                    <div class="fadeIn"></div>
                </div>
+               </div>
            </div>
        </div>
-   </div>
-    
 </body>
 </html>

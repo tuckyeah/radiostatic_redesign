@@ -9,12 +9,42 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script src="../../js/alt_script.js"></script>
         <title>Let The Stars Be Your Guide</title>
+        
+        <style>
+        
+            @keyframes outward_pulse {
+                50% {
+                    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2),
+                        0 0 0 15px rgba(8, 8, 8, 0.4),
+                        0 0 0 25px rgba(160, 160, 160, 0.5); 
 
+                }
+
+                100% {
+                    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0),
+                        0 0 0 20px rgba(8, 8, 8, 0),
+                        0 0 0 30px rgba(160, 160, 160, 0); 
+                }
+            }
+
+            .constellations.nightSky .activeStar {
+                border: 1px solid red;
+            }
+
+            .constellations.nightSky .leopoldConstellation .star:hover {
+                animation: outward_pulse 2s infinite ease-in-out;
+            }
+
+            .constellations.nightSky .leopoldConstellation #ive-arrived:hover {
+                animation: outward_pulse 2s infinite ease-in-out;
+
+            }
+        </style>
         <script>
 
             function onPageClick() {
                 $('.leopoldConstellation .star').animate({
-                    backgroundColor: "#FFF"}, '800');
+                    backgroundColor: "#fffcaa"}, '800');
                 $('#leopold').fadeIn('slow');
                 $('.leopoldConstellation .star:first-child').addClass('activeBlink');
                 $('.leopoldConstellation').wrap('<a href="leopold/ive-arrived.html" />')

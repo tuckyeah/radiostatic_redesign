@@ -20,9 +20,10 @@
         }
 
         function pageSpecificFunction() {
-            addStarBlink();
-            console.log(currentSection)
-            console.log(currentStage)
+            if (currentSection == 1 && currentStage == 4) {
+                $('.leopoldConstellation').removeClass('lowOpacity')
+                $('#confessions').addClass('activeBlink')
+            }
         }
     </script>
 
@@ -41,7 +42,7 @@
                   <div class="juneConstellation" style="border-radius: 10px; margin-top: 10px;">
                       <div class="star activated" id="june-1"></div>
                       <div class="star activated" id="june-2"></div>
-                      <div class="star activated" id="june-3"></div>
+                      <div class="star current" id="june-3"></div>
                       <div class="star" id="june-4"></div>
                       <div class="star" id="june-5"></div>
                       <div class="star" id="june-6"></div>
@@ -84,17 +85,6 @@
                       <div class="star" id="howl"></div>
                       <div class="star" id="hydrogen"></div> 
                   </div>
-
-                  <div class="bartenderConstellation lowOpacity">
-<!--
-                      <div class="star activated" id="bartender-first"></div>
-                      <div class="star" id="bartender-second"></div>
-                      <div class="star" id="bartender-third"></div>
--->
-                 
-                 <div class="moonButton"></div>
-                  </div>
-
               </div>
           </div>
     

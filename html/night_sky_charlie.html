@@ -15,12 +15,40 @@
 <script src="../js/alt_script.js"></script>
 -->
         <title>Let The Stars Be Your Guide</title>
+        
+        <style>
+        
+            @keyframes outward_pulse {
+                50% {
+                    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2),
+                        0 0 0 15px rgba(8, 8, 8, 0.4),
+                        0 0 0 25px rgba(160, 160, 160, 0.5); 
+
+                }
+
+                100% {
+                    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0),
+                        0 0 0 20px rgba(8, 8, 8, 0),
+                        0 0 0 30px rgba(160, 160, 160, 0); 
+                }
+            }
+
+
+            .constellations.nightSky .charlieConstellation .star:hover {
+                animation: outward_pulse 2s infinite ease-in-out;
+            }
+
+            .constellations.nightSky .charlieConstellation #charlie-1:hover {
+                animation: outward_pulse 2s infinite ease-in-out;
+
+            }
+        </style>
 
         <script>
 
             function onPageClick() {
                 $('.charlieConstellation .star').animate({
-                    backgroundColor: "#FFF"}, '800');
+                    backgroundColor: "#fffcaa"}, '800');
                 $('#charlie').fadeIn('slow');
                 $('.charlieConstellation .star:first-child').addClass('activated');
                 $('.charlieConstellation').wrap('<a href="charlie/charlie-1.html" />')
