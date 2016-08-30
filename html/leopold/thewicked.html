@@ -10,6 +10,22 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script type="text/javascript" src="../../js/alt_script.js"></script>
+    <style>
+        @keyframes light_pulse {
+            50% {
+                box-shadow: 0 0 0 2px rgba(114, 114, 114, 0.2),
+                    0 0 0 8px rgba(178, 178, 178, 0.4),
+                    0 0 0 5px rgba(160, 160, 160, 0.5); 
+            }
+        }
+        .star.activated {
+            border: 1px solid rgba(0,0,0,0.5);
+        }
+        
+        .star.activated:hover {
+            animation: light_pulse 2s infinite ease-in-out;
+        }
+    </style>
     
     <script>
     

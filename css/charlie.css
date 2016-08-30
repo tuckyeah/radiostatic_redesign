@@ -88,13 +88,52 @@ a {
 }
 
 .panel.satFieldOne {
-    background-image: url('../imgs/june_strips/june-satfield-a.jpg');
+    background-image: url('../imgs/june_strips/june-reverse-satfield-a.jpg');
 }
 
 .panel.satFieldTwo {
-    background-image: url('../imgs/june_strips/june-satfield-b.jpg');
+    background-image: url('../imgs/june_strips/june-reverse-satfield-b.jpg');
 }
 
 .panel.satFieldThree {
-    background-image: url('../imgs/june_strips/june-satfield-c.jpg');
+    background-image: url('../imgs/june_strips/june-reverse-satfield-c.jpg');
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 600px) {
+    .comicContainer {
+        margin-top: 20px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .panel {
+        height: auto;
+        min-height: 400px;
+        width: 100%;
+        background-size: cover; 
+        margin-bottom: 10px;
+    }
+
+    .middle { height: 400px;}
+
+    .middle p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .comicContainer {
+        width: 1200px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .comicContainer {
+        margin-top: 20px;
+        height: auto;
+        overflow-y: hidden;
+    }
+
 }

@@ -93,7 +93,9 @@ section.module.parallax-5 {
     background-image: url('../imgs/june_strips/firehouse.jpg');
     background-size: cover;
     height: 1000px;
+    background-position: 0px -175px;
 }
+
 
 section.module.parallax h2 {
     color: #FFF;
